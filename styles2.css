@@ -1,0 +1,135 @@
+body {
+	background: black;
+	height: 99%;
+	font-family: 'Stalinist One', sans-serif;
+	font-size: 119px;
+}
+	/*Atomic Age|Geostar Fill Yatra One     Averia Serif Libre|Baloo Paaji|Cherry Swash|Fascinate||
+	Katibeh|Macondo|Medula One|Prosto One|Rammetto One|Righteous|Warnes" rel="stylesheet">*/
+
+.top {
+  color: white;
+  background: black;
+}
+
+.txt, .txt a {
+  font-family: 'Atomic Age', serif;
+  font-size: 30px;
+  color: white;
+}
+
+.txt a {
+  font-family: 'Overlock', serif;
+}
+
+
+.glitch {
+  position: relative;
+  color: white;
+}
+
+.glitch::before,
+.glitch::after {
+  content: url(IMG_4596.JPG);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.glitch::before {
+  /* ... anything needed to make it identical */
+
+  /* variation */
+  left: 2px;
+  text-shadow: -1px 0 red;
+  
+  /* important: opaque background masks the original */
+  /*background: black;*/
+  animation: glitch-anim-1 1s infinite linear alternate-reverse;
+}
+
+.glitch::after {
+  /* ... anything needed to make it identical */
+
+  /* variation */
+  left: -2px;
+  text-shadow: -1px 0 blue;
+  
+  /* important: opaque background masks the original */
+  /*background: black;*/
+  /*clip: rect(44px, 1000px, 56px, 0);*/
+    animation: glitch-anim 0.1s infinite linear alternate-reverse;
+
+}
+
+@keyframes glitch-anim-1 {
+  0% {
+    clip: rect(160px, 1000px, 130px, 0);
+  }
+  11% {
+    clip: rect(360px, 1000px, 122px, 0);
+  }
+  40% {
+    clip: rect(92px, 1000px, 580px, 0);
+  }
+  60% {
+    clip: rect(155px, 1000px, 280px, 0);
+  }
+  80% {
+    clip: rect(399px, 1000px, 488px, 0);
+  }
+  100% {
+    clip: rect(12px, 1000px, 200px, 0);
+  }
+}
+
+@keyframes glitch-anim-2 {
+  0% {
+    clip: rect(90px, 1000px, 76px, 0);
+  }
+  18% {
+    clip: rect(129px, 1000px, 16px, 0);
+  }
+  33% {
+    clip: rect(76px, 1000px, 160px, 0);
+  }
+  60% {
+    clip: rect(22px, 1000px, 60px, 0);
+  }
+  77% {
+    clip: rect(100px, 1000px, 13px, 0);
+  }
+  87% {
+    clip: rect(155px, 1000px, 88px, 0);
+  }
+  100% {
+    clip: rect(23px, 1000px, 5px, 0);
+  }
+}
+
+
+@keyframes glitch-anim {
+  0% {
+    clip: rect(70px, 1000px, 76px, 0);
+  }
+  20% {
+    clip: rect(29px, 1000px, 16px, 0);
+  }
+  40% {
+    clip: rect(76px, 1000px, 3px, 0);
+  }
+  60% {
+    clip: rect(42px, 1000px, 78px, 0);
+  }
+  80% {
+    clip: rect(15px, 1000px, 13px, 0);
+  }
+  100% {
+    clip: rect(53px, 1000px, 5px, 0);
+  }
+}
+
+
